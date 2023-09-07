@@ -568,6 +568,38 @@ video {
   }
 }
 
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-\[-400px\] {
+  top: -400px;
+}
+
+.top-\[80px\] {
+  top: 80px;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-\[9\] {
+  z-index: 9;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -583,12 +615,35 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -623,6 +678,14 @@ video {
   height: 70vh;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-\[90vh\] {
+  height: 90vh;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -639,8 +702,24 @@ video {
   width: 75%;
 }
 
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.items-center {
+  align-items: center;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .gap-3 {
@@ -690,6 +769,10 @@ video {
   padding: 0.5rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -725,12 +808,20 @@ video {
   padding-bottom: 5rem;
 }
 
+.pl-7 {
+  padding-left: 1.75rem;
+}
+
 .text-center {
   text-align: center;
 }
 
 .text-end {
   text-align: end;
+}
+
+.font-\[Poppins\] {
+  font-family: Poppins;
 }
 
 .text-7xl {
@@ -751,6 +842,21 @@ video {
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -796,6 +902,20 @@ video {
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -806,8 +926,16 @@ video {
   transition-duration: 150ms;
 }
 
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .hover\:bg-red-300:hover {
@@ -818,6 +946,11 @@ video {
 .hover\:bg-black:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.hover\:text-cyan-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(6 182 212 / var(--tw-text-opacity));
 }
 
 @media (prefers-color-scheme: dark) {
@@ -838,21 +971,46 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:static {
+    position: static;
+  }
+
+  .md\:z-auto {
+    z-index: auto;
+  }
+
   .md\:my-auto {
     margin-top: auto;
     margin-bottom: auto;
+  }
+
+  .md\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .md\:mt-0 {
     margin-top: 0px;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:grid {
     display: grid;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:w-3\/4 {
     width: 75%;
+  }
+
+  .md\:w-auto {
+    width: auto;
   }
 
   .md\:grid-cols-3 {
@@ -863,9 +1021,21 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:items-center {
+    align-items: center;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .md\:pl-0 {
+    padding-left: 0px;
   }
 
   .md\:text-7xl {
@@ -875,5 +1045,9 @@ video {
 
   .md\:leading-normal {
     line-height: 1.5;
+  }
+
+  .md\:opacity-100 {
+    opacity: 1;
   }
 }

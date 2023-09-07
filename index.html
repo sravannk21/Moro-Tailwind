@@ -9,10 +9,42 @@
 <body class="bg-white dark:bg-gray-800 dark:text-white">
  <!--HEADER-SECTION-->
  <div class="container mx-auto">
-    <header class="flex justify-center h-[100vh] p-2">
-        <div class="my-auto">
-            <h1 class="uppercase text-4xl md:text-7xl text-center font-bold leading-snug md:leading-normal text-black dark:text-white">UNLOCK THE POWER<br/> OF ADVERTISING WITH<br/> TEAM MORO</h1>
-        </div>
+    <header>
+        <nav class=" z-10 p-5 container fixed bg-white text-black md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center ">
+              <span class="text-2xl font-[Poppins] cursor-pointer">
+                <img class="h-10 inline"
+                  src="./build/img/moro-logo.png">
+              </span>
+        
+              <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+              </span>
+            </div>
+        
+            <ul class="md:flex md:items-center z-[9] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#home" class="text-base hover:text-cyan-500 duration-500 capitalize">Home</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#about" class="text-base hover:text-cyan-500 duration-500 capitalize">projects</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#products" class="text-base hover:text-cyan-500 duration-500 capitalize">services</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#services" class="text-base hover:text-cyan-500 duration-500 capitalize">about us</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#contact" class="text-base hover:text-cyan-500 duration-500 capitalize">contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="flex justify-center h-[100vh] p-2">
+            <div class="my-auto">
+                <h1 class="uppercase text-4xl md:text-7xl text-center font-bold leading-snug md:leading-normal text-black dark:text-white">UNLOCK THE POWER<br/> OF ADVERTISING WITH<br/> TEAM MORO</h1>
+            </div>
+          </div>
     </header>
  </div>
 
@@ -58,5 +90,13 @@
  <!--DIVIDER-->
  <div class="w-full h-0.5 dark:bg-white bg-black"></div>
 <script src="./build/js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    function Menu(e){
+    let list = document.querySelector('ul');
+    e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+  }
+</script>
 </body>
 </html>
