@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,299 +11,331 @@
 https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css
 " rel="stylesheet">
 </head>
+
 <body class="bg-white dark:bg-gray-800 dark:text-white">
- <!--HEADER-SECTION-->
- <div class="max-w-7xl mx-auto">
-    <header>
-        <nav class=" z-10 p-5 max-w-7xl mx-auto text-black md:flex md:items-center md:justify-between">
-            <div class="flex justify-between items-center ">
-              <span class="text-2xl font-[Poppins] cursor-pointer">
-                <img class="h-10 inline"
-                  src="./build/img/moro-logo.png">
-              </span>
-        
-              <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-              </span>
+    <!--HEADER-SECTION-->
+    <div class="max-w-7xl mx-auto">
+        <header>
+            <nav class=" z-10 p-5 max-w-7xl mx-auto text-black md:flex md:items-center md:justify-between">
+                <div class="flex justify-between items-center ">
+                    <span class="text-2xl font-[Poppins] cursor-pointer">
+                        <img class="h-10 inline" src="./build/img/moro-logo.png">
+                    </span>
+
+                    <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                    </span>
+                </div>
+
+                <ul
+                    class="md:flex md:items-center z-[9] md:z-auto md:static absolute dark:text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="index.html" class="text-sm hover:text-cyan-500 duration-500 capitalize">home</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="projects.html" class="text-sm hover:text-cyan-500 duration-500 capitalize">projects</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="services.html" class="text-sm hover:text-cyan-500 duration-500 capitalize">services</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="about.html" class="text-sm hover:text-cyan-500 duration-500 capitalize">about us</a>
+                    </li>
+                </ul>
+                <ul
+                    class="md:flex md:items-center z-[9] md:z-auto md:static absolute dark:text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="#contact" class="text-sm hover:text-cyan-500 duration-500 capitalize">contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="md:grid md:grid-cols-2 p-2 h-[75vh]">
+                <div class="my-auto">
+                    <h2 class="text-6xl font-bold leading-normal">hello<br />we're<span class="text-red-600">
+                            moro</span></h2>
+                </div>
+                <div class="my-auto">
+                    <p class="text-base  w-full md:w-3/4 mx-auto">
+                        We are creative marketing agency specializes in helping you effectively communicate your
+                        unique story and connect with the audience that aligns with your goal and values. We use
+                        our expertise to create engaging strategies and campaigns that showcase your brand in the
+                        best possible way.
+                    </p>
+                    <p class="text-base w-full md:w-3/4 mx-auto mt-5">
+                        Our main focus is on inspiring emotions in people and inspiring them to take meaningful
+                        action. We believe in the power of connecting with individuals on an emotional level,
+                        whether it’s through captivating storytelling, compelling visuals or engaging experience. By
+                        making people feel and igniting their motivation, we aim to drive them towards positive and
+                        impactful actions.
+                    </p>
+                </div>
             </div>
-        
-            <ul class="md:flex md:items-center z-[9] md:z-auto md:static absolute dark:text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="index.html" class="text-sm hover:text-cyan-500 duration-500 capitalize">home</a>
-                  </li>
-              <li class="mx-4 my-6 md:my-0">
-                <a href="projects.html" class="text-sm hover:text-cyan-500 duration-500 capitalize">projects</a>
-              </li>
-              <li class="mx-4 my-6 md:my-0">
-                <a href="services.html" class="text-sm hover:text-cyan-500 duration-500 capitalize">services</a>
-              </li>
-              <li class="mx-4 my-6 md:my-0">
-                <a href="about.html" class="text-sm hover:text-cyan-500 duration-500 capitalize">about us</a>
-              </li>
-            </ul>
-            <ul class="md:flex md:items-center z-[9] md:z-auto md:static absolute dark:text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-                <li class="mx-4 my-6 md:my-0">
-                  <a href="#contact" class="text-sm hover:text-cyan-500 duration-500 capitalize">contact</a>
-                </li>
-              </ul>
-          </nav>
-          <div class="md:grid md:grid-cols-2 p-2 h-[75vh]">
-            <div class="my-auto">
-                <h2 class="text-6xl font-bold leading-normal">hello<br/>we're<span class="text-red-600"> moro</span></h2>
+            <div class="text-center mb-10">
+                <a href="#"
+                    class="text-base text-white capitalize py-2 px-8 rounded-2xl bg-red-600 hover:bg-black duration-150 ease-in-out transition-all">let's
+                    work together</a>
             </div>
-            <div class="my-auto">
-                <p class="text-base  w-full md:w-3/4 mx-auto">
-                    We believe that truly impactful brands inspire their audiences to action, to dream, to change, they leave an impression on their audiences and world genuine influence.
-                </p>
-                <p class="text-base w-full md:w-3/4 mx-auto mt-5">
-                    Creating work like this is our passion, it’s what brought us together, and it’s what keeps us moving forward.
-                </p>
-            </div>
-          </div>
-          <div class="text-center mb-10">
-            <a href="#" class="text-base text-white capitalize py-2 px-8 rounded-2xl bg-red-600 hover:bg-black duration-150 ease-in-out transition-all">let's work together</a>
+        </header>
+    </div>
+
+    <!--DIVIDER-->
+    <div class="w-full h-0.5 dark:bg-white bg-black"></div>
+
+    <!--ABOUT-DESCRIPTION-->
+    <section class="py-10">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="capitalize text-center text-2xl font-bold">from humble beginninig to adevertaising pioneers</h3>
+            <p class="md:w-2/3 mx-auto mt-7 text-center">
+                Moro was bom from a humble desire to revolutionize the advertising industry. With unwavering
+                determination and a commitment to excellence, we have grown into advertising ploneers, delivering
+                compelling campaigns that leave a lasting impact.
+            </p>
         </div>
-    </header>
- </div>
+    </section>
 
- <!--DIVIDER-->
- <div class="w-full h-0.5 dark:bg-white bg-black"></div>
-
-<!--ABOUT-DESCRIPTION-->
-<section class="py-10">
-    <div class="max-w-7xl mx-auto">
-        <h3 class="capitalize text-center text-2xl font-bold">from humble beginninig to adevertaising pioneers</h3>
-        <p class="md:w-2/3 mx-auto mt-7 text-center">
-            Moro was bom from a humble desire to revolutionize the advertising industry. With unwavering determination and a commitment to excellence, we have grown into advertising ploneers, delivering compelling campaigns that leave a lasting impact.
-        </p>
-    </div>
-</section>
-
-<!--ABOUT-DETAILS-->
-<section class="py-10 p-2">
-    <div class="max-w-7xl mx-auto">
-        <h1 class="capitalize text-6xl md:text-7xl font-bold text-center md:text-left">Your <span class="text-red-600">Success</span></h1><br>
-        <h1 class="capitalize text-6xl md:text-7xl font-bold text-center md:text-left">Our <span class="text-red-600">Priority</span></h1>
-        <p class="mt-10 w-full md:w-3/4 md:text-start">
-            Choosing Moro means choosing a partner dedicated to your success. We invest not only in campaigns but in relationships, ensuring open communication and a shared commitment to your brand's growth
-        </p>
-    </div>
-</section>
-
-<!--ADDITIONAL DESCRIPTION-->
-<p class="text-center md:w-1/2 mx-auto mt-5 md:mt-20 p-2">
-    We invite you to join us on this exciting journey of creativity Innovation, and growth. Together, we can craft your brand's success story and make a lasting impact in the world of advertising
-</p>
-<div class="text-center my-10">
-    <a href="#" class="text-base text-white capitalize py-2 px-8 rounded-2xl bg-red-600 hover:bg-black duration-150 ease-in-out transition-all">let's work together</a>
-</div>
-
-<!--CONTACTUS-ABOUT-->
-<section class="py-10">
-    <div class="max-w-7xl mx-auto">
-        <div class="md:grid md:grid-cols-2 text-center">
-            <div>
-                <h3 class="uppercase text-3xl mb-5">india</h3>
-                <p class="capitalize">manatti complex,manna<br>taliparamba 670141</p>
-                <p class="mt-5">
-                    <a href="">9605164671</a><br>
-                    <a href="">9961164681</a>
-                </p>
-            </div>
-            <div>
-                <h3 class="uppercase text-3xl mb-5">uae</h3>
-                <p class="capitalize mx-auto">suit no1402, level 14<br> boulevard plaza tower 1<br> downtown dubai UAE</p>
-                <p class="mt-5">
-                    <a href="">+971 55671 9396</a><br>
-                    <a href="">+971 44558 525</a>
-                </p>
-            </div>
+    <!--ABOUT-DETAILS-->
+    <section class="py-10 p-2">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="capitalize text-6xl md:text-7xl font-bold text-center md:text-left">YOU <span
+                    class="text-red-600">VISUALIZE</span></h1><br>
+            <h1 class="capitalize text-6xl md:text-7xl font-bold text-center md:text-left">WE <span
+                    class="text-red-600">MANIFEST</span></h1>
+            <p class="mt-10 w-full md:w-3/4 md:text-start">
+                When you team up with MORO, you are not just getting a regular agency. We are like a
+                close friend who’s always there for you. We invest our time and effort into understanding
+                your business and goals. We believe in building strong relationship and having open
+                communication, so we can work together to make your brand grow. It’s not just about
+                running campaigns, it’s about creating a partnership that will lead to your success.
+            </p>
         </div>
-    </div>
-</section>
+    </section>
 
- <!--MEET-OUR-TEAM-->
- <section class="my-20">
-    <div class="max-w-7xl mx-auto text-center p-2">
-        <h3 class="capitalize text-5xl mb-14 text-left">meet our team</h3>
-        <div class="owl-carousel" id="team">
-            <div class="relative">
-                <img src="./build/img/team/firoz.jpeg" alt="">
-                <div class="text-left absolute bottom-0 left-0 text-white bg-black bg-opacity-80 p-3">
-                    <h4 class="uppercase font-bold text-xl">firose p</h4>
-                    <h5 class="capitalize mt-1"><i>CTO</i></h5>
+    <!--ADDITIONAL DESCRIPTION-->
+    <p class="text-center md:w-1/2 mx-auto mt-5 md:mt-20 p-2">
+        We will make sure to address your issue within a few hours or at most 2 working days after
+        receiving your enquiry.
+    </p>
+    <div class="text-center my-10">
+        <a href="#"
+            class="text-base text-white capitalize py-2 px-8 rounded-2xl bg-red-600 hover:bg-black duration-150 ease-in-out transition-all">let's
+            work together</a>
+    </div>
+
+    <!--CONTACTUS-ABOUT-->
+    <section class="py-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="md:grid md:grid-cols-2 text-center">
+                <div>
+                    <h3 class="uppercase text-3xl mb-5">india</h3>
+                    <p class="capitalize">manatti complex,manna<br>taliparamba 670141</p>
+                    <p class="mt-5">
+                        <a href="">9605164671</a><br>
+                        <a href="">9961164681</a>
+                    </p>
                 </div>
-            </div>
-            <div class="relative">
-                <img src="./build/img/team/roopak.jpeg" alt="">
-                <div class="text-left absolute bottom-0 left-0 text-white bg-black bg-opacity-80 p-3">
-                    <h4 class="uppercase font-bold text-xl">roopak kk</h4>
-                    <h5 class="capitalize mt-1"><i>team lead</i></h5>
-                </div>
-            </div>
-            <div class="relative">
-                <img src="./build/img/team/rahul.jpeg" alt="">
-                <div class="text-left absolute bottom-0 left-0 text-white bg-black bg-opacity-80 p-3">
-                    <h4 class="uppercase font-bold text-xl">rahul gireesh</h4>
-                    <h5 class="capitalize mt-1"><i>graphic designer</i></h5>
-                </div>
-            </div>
-            <div class="relative">
-                <img src="./build/img/team/sanil.jpeg" alt="">
-                <div class="text-left absolute bottom-0 left-0 text-white bg-black bg-opacity-80 p-3">
-                    <h4 class="uppercase font-bold text-xl">sanil pp</h4>
-                    <h5 class="capitalize mt-1"><i>graphic designer</i></h5>
-                </div>
-            </div>
-            <div class="relative">
-                <img src="./build/img/team/sravan.jpeg" alt="">
-                <div class="text-left absolute bottom-0 left-0 text-white bg-black bg-opacity-80 p-3">
-                    <h4 class="uppercase font-bold text-xl">sravan nk</h4>
-                    <h5 class="capitalize mt-1"><i>web developer</i></h5>
-                </div>
-            </div>
-            <div class="relative">
-                <img src="./build/img/team/saleema.jpeg" alt="">
-                <div class="text-left absolute bottom-0 left-0 text-white bg-black bg-opacity-80 p-3">
-                    <h4 class="uppercase font-bold text-xl">saleema m</h4>
-                    <h5 class="capitalize mt-1"><i>digital marketing</i></h5>
-                </div>
-            </div>
-            <div class="relative">
-                <img src="./build/img/team/santwana.jpeg" alt="">
-                <div class="text-left absolute bottom-0 left-0 text-white bg-black bg-opacity-80 p-3">
-                    <h4 class="uppercase font-bold text-xl">santhwana</h4>
-                    <h5 class="capitalize mt-1"><i>content writer</i></h5>
-                </div>
-            </div>
-            <div class="relative">
-                <img src="./build/img/team/aysha.jpeg" alt="">
-                <div class="text-left absolute bottom-0 left-0 text-white bg-black bg-opacity-80 p-3">
-                    <h4 class="uppercase font-bold text-xl">Aysha</h4>
-                    <h5 class="capitalize mt-1"><i>content writer</i></h5>
-                </div>
-            </div>
-            <div class="relative">
-                <img src="./build/img/team/harsha.jpeg" alt="">
-                <div class="text-left absolute bottom-0 left-0 text-white bg-black bg-opacity-80 p-3">
-                    <h4 class="uppercase font-bold text-xl">harsha</h4>
-                    <h5 class="capitalize mt-1"><i>accountant</i></h5>
+                <div>
+                    <h3 class="uppercase text-3xl mb-5">uae</h3>
+                    <p class="capitalize mx-auto">suit no1402, level 14<br> boulevard plaza tower 1<br> downtown dubai
+                        UAE</p>
+                    <p class="mt-5">
+                        <a href="">+971 55671 9396</a><br>
+                        <a href="">+971 44558 525</a>
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
- </section>
+    </section>
 
- <!--CONTACT-FORM-->
- <section class="py-20">
-    <div class="max-w-7xl mx-auto p-2">
-        <div class="md:grid md:grid-cols-2">
-            <div class="my-auto">
-                <h3 class="capitalize text-2xl font-bold">To make requests for<br> further information</h3>
-                <p class="md:w-1/2 mt-5 mb-5 md:mb-0">we just need couple of hours! no morethan two working days since reciving your issue ticket</p>
-            </div>
-
-            <!--CONTACT-FORM-->
-            <div>
-                <form action="" method="post" enctype="multipart/form-data">
-                    <input type="text" name="name" placeholder="Name" class="outline-none bg-gray-100 p-2 text-black w-full mb-5" id="">
-                    <div class="md:grid md:grid-cols-2 gap-4">
-                        <input type="email" name="email" placeholder="Email" class="outline-none bg-gray-100 p-2 text-black w-full mb-5" id="">
-                        <input type="text" name="phone" placeholder="Phone" class="outline-none bg-gray-100 p-2 text-black w-full mb-5" id="">
+    <!--MEET-OUR-TEAM-->
+    <section class="my-20">
+        <div class="max-w-7xl mx-auto text-center p-2">
+            <h3 class="capitalize text-5xl mb-14 text-left">meet our team</h3>
+            <div class="owl-carousel" id="team">
+                <div class="relative">
+                    <img src="./build/img/team/firoz.jpeg" alt="">
+                    <div class="text-left absolute bottom-0 left-0 text-white bg-black bg-opacity-80 p-3">
+                        <h4 class="uppercase font-bold text-xl">firose p</h4>
+                        <h5 class="capitalize mt-1"><i>CTO</i></h5>
                     </div>
-                    <textarea class="outline-none bg-gray-100 p-2 w-full mb-5 h-32" placeholder="Message"></textarea>
-                    <a href="#" class="capitalize py-2 px-6 text-base bg-red-600 hover:bg-black duration-150 ease-in text-white rounded-2xl">message us</a>
-                </form>
+                </div>
+                <div class="relative">
+                    <img src="./build/img/team/roopak.jpeg" alt="">
+                    <div class="text-left absolute bottom-0 left-0 text-white bg-black bg-opacity-80 p-3">
+                        <h4 class="uppercase font-bold text-xl">roopak kk</h4>
+                        <h5 class="capitalize mt-1"><i>team lead</i></h5>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="./build/img/team/rahul.jpeg" alt="">
+                    <div class="text-left absolute bottom-0 left-0 text-white bg-black bg-opacity-80 p-3">
+                        <h4 class="uppercase font-bold text-xl">rahul gireesh</h4>
+                        <h5 class="capitalize mt-1"><i>graphic designer</i></h5>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="./build/img/team/sanil.jpeg" alt="">
+                    <div class="text-left absolute bottom-0 left-0 text-white bg-black bg-opacity-80 p-3">
+                        <h4 class="uppercase font-bold text-xl">sanil pp</h4>
+                        <h5 class="capitalize mt-1"><i>graphic designer</i></h5>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="./build/img/team/sravan.jpeg" alt="">
+                    <div class="text-left absolute bottom-0 left-0 text-white bg-black bg-opacity-80 p-3">
+                        <h4 class="uppercase font-bold text-xl">sravan nk</h4>
+                        <h5 class="capitalize mt-1"><i>web developer</i></h5>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="./build/img/team/saleema.jpeg" alt="">
+                    <div class="text-left absolute bottom-0 left-0 text-white bg-black bg-opacity-80 p-3">
+                        <h4 class="uppercase font-bold text-xl">saleema m</h4>
+                        <h5 class="capitalize mt-1"><i>digital marketing</i></h5>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="./build/img/team/santwana.jpeg" alt="">
+                    <div class="text-left absolute bottom-0 left-0 text-white bg-black bg-opacity-80 p-3">
+                        <h4 class="uppercase font-bold text-xl">santhwana</h4>
+                        <h5 class="capitalize mt-1"><i>content writer</i></h5>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="./build/img/team/aysha.jpeg" alt="">
+                    <div class="text-left absolute bottom-0 left-0 text-white bg-black bg-opacity-80 p-3">
+                        <h4 class="uppercase font-bold text-xl">Aysha</h4>
+                        <h5 class="capitalize mt-1"><i>content writer</i></h5>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="./build/img/team/harsha.jpeg" alt="">
+                    <div class="text-left absolute bottom-0 left-0 text-white bg-black bg-opacity-80 p-3">
+                        <h4 class="uppercase font-bold text-xl">harsha</h4>
+                        <h5 class="capitalize mt-1"><i>accountant</i></h5>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
- </section>
- <!--FOOTER-->
- <footer>
-    <div class="max-w-7xl mx-auto my-10 p-2">
-        <div class="md:grid md:grid-cols-3">
-            <div class="mb-2">
-                <h3 class="uppercase text-3xl mb-5">contact</h3>
-                <a href="" target="_blank">hi@teammoro.com</a>
-            </div>
-            <div class="mb-2">
-                <h3 class="uppercase text-3xl mb-5">india</h3>
-                <p class="capitalize">manatti complex,manna<br>taliparamba 670141</p>
-                <p class="mt-5">
-                    <a href="">9605164671</a><br>
-                    <a href="">9961164681</a>
-                </p>
-            </div>
-            <div class="mb-2">
-                <h3 class="uppercase text-3xl mb-5">uae</h3>
-                <p class="capitalize">suit no1402, level 14 boulevard plaza tower 1 downtown dubai UAE</p>
-                <p class="mt-5">
-                    <a href="">+971 55671 9396</a><br>
-                    <a href="">+971 44558 525</a>
-                </p>
-            </div>
-        </div>
-        <div class="md:grid md:grid-cols-2 mt-20">
-            <div class="lg:text-start">
-                <p class="font-semibold">&copy; Moro 2023</p>
-            </div>
-            <div class="md:text-end mt-5 md:mt-0">
-                <span class="mr-2 text-3xl text-gray-600 hover:text-black duration-150 ease-in">
-                    <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
-                </span>
-                <span class="mr-2 text-3xl text-gray-600 hover:text-black duration-150 ease-in">
-                    <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
-                </span>
-                <span class="mr-2 text-3xl text-gray-600 hover:text-black duration-150 ease-in">
-                    <a href=""><ion-icon name="logo-behance"></ion-icon></a>
-                </span>
-                <span class="mr-2 text-3xl text-gray-600 hover:text-black duration-150 ease-in">
-                    <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
-                </span>
-                <span class="text-3xl text-gray-600 hover:text-black duration-150 ease-in">
-                    <a href=""><ion-icon name="logo-dribbble"></ion-icon></a>
-                </span>
-            </div>
-        </div>
-    </div>
- </footer>
+    </section>
 
-<script src="./build/js/script.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script>
-    function Menu(e){
-    let list = document.querySelector('ul');
-    e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
-  }
-</script>
-<script src="
+    <!--CONTACT-FORM-->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto p-2">
+            <div class="md:grid md:grid-cols-2">
+                <div class="my-auto">
+                    <h3 class="capitalize text-2xl font-bold">To make requests for<br> further information</h3>
+                    <p class="md:w-1/2 mt-5 mb-5 md:mb-0">we just need couple of hours! no morethan two working days
+                        since reciving your issue ticket</p>
+                </div>
+
+                <!--CONTACT-FORM-->
+                <div>
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <input type="text" name="name" placeholder="Name"
+                            class="outline-none bg-gray-100 p-2 text-black w-full mb-5" id="">
+                        <div class="md:grid md:grid-cols-2 gap-4">
+                            <input type="email" name="email" placeholder="Email"
+                                class="outline-none bg-gray-100 p-2 text-black w-full mb-5" id="">
+                            <input type="text" name="phone" placeholder="Phone"
+                                class="outline-none bg-gray-100 p-2 text-black w-full mb-5" id="">
+                        </div>
+                        <textarea class="outline-none bg-gray-100 p-2 w-full mb-5 h-32"
+                            placeholder="Message"></textarea>
+                        <a href="#"
+                            class="capitalize py-2 px-6 text-base bg-red-600 hover:bg-black duration-150 ease-in text-white rounded-2xl">message
+                            us</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+        <div class="max-w-7xl mx-auto my-10 p-2">
+            <div class="md:grid md:grid-cols-3">
+                <div class="mb-2">
+                    <h3 class="uppercase text-3xl mb-5">contact</h3>
+                    <a href="" target="_blank">hi@teammoro.com</a>
+                </div>
+                <div class="mb-2">
+                    <h3 class="uppercase text-3xl mb-5">india</h3>
+                    <p class="capitalize">manatti complex,manna<br>taliparamba 670141</p>
+                    <p class="mt-5">
+                        <a href="">9605164671</a><br>
+                        <a href="">9961164681</a>
+                    </p>
+                </div>
+                <div class="mb-2">
+                    <h3 class="uppercase text-3xl mb-5">uae</h3>
+                    <p class="capitalize">suit no1402, level 14 boulevard plaza tower 1 downtown dubai UAE</p>
+                    <p class="mt-5">
+                        <a href="">+971 55671 9396</a><br>
+                        <a href="">+971 44558 525</a>
+                    </p>
+                </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 mt-20">
+                <div class="lg:text-start">
+                    <p class="font-semibold">&copy; Moro 2023</p>
+                </div>
+                <div class="md:text-end mt-5 md:mt-0">
+                    <span class="mr-2 text-3xl text-gray-600 hover:text-black duration-150 ease-in">
+                        <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                    </span>
+                    <span class="mr-2 text-3xl text-gray-600 hover:text-black duration-150 ease-in">
+                        <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                    </span>
+                    <span class="mr-2 text-3xl text-gray-600 hover:text-black duration-150 ease-in">
+                        <a href=""><ion-icon name="logo-behance"></ion-icon></a>
+                    </span>
+                    <span class="mr-2 text-3xl text-gray-600 hover:text-black duration-150 ease-in">
+                        <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </span>
+                    <span class="text-3xl text-gray-600 hover:text-black duration-150 ease-in">
+                        <a href=""><ion-icon name="logo-dribbble"></ion-icon></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./build/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+        }
+    </script>
+    <script src="
 https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js
 "></script>
-<script src="./src/vendors/jquary/jquery-3.7.0.min.js"></script>
-<script src="
+    <script src="./src/vendors/jquary/jquery-3.7.0.min.js"></script>
+    <script src="
 https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js
 "></script>
-<script>
-    $('document').ready(function() {
-        $('#team').owlCarousel({
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 5
+    <script>
+        $('document').ready(function () {
+            $('#team').owlCarousel({
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
                 }
-            }
+            })
         })
-    })
-</script>
+    </script>
 </body>
+
 </html>

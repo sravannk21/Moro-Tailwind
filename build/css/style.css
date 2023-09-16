@@ -675,6 +675,18 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -741,6 +753,10 @@ video {
 
 .max-w-7xl {
   max-width: 80rem;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .transform {
@@ -931,6 +947,10 @@ video {
 
 .pt-2\.5 {
   padding-top: 0.625rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
 }
 
 .text-left {
@@ -1282,6 +1302,10 @@ video {
 
   .md\:mt-32 {
     margin-top: 8rem;
+  }
+
+  .md\:ml-5 {
+    margin-left: 1.25rem;
   }
 
   .md\:flex {
