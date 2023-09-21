@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./build/css/style.css">
     <link rel="stylesheet" href="./build/css/custom.css">
     <link href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body class="bg-white">
@@ -26,7 +27,7 @@
                 </div>
 
                 <ul
-                    class="md:flex md:items-center z-[9] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                    class="md:flex bg-white md:items-center z-[9] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
                     <li class="mx-4 my-6 md:my-0">
                         <a href="projects.html" class="text-sm hover:text-cyan-500 duration-500 capitalize">projects</a>
                     </li>
@@ -46,8 +47,13 @@
             </nav>
             <div class="flex justify-center h-[60vh] p-2">
                 <div class="my-auto">
-                    <h1
-                        class="uppercase text-4xl md:text-5xl text-center font-bold leading-snug md:leading-normal text-black">
+                    <h1 class="uppercase text-4xl md:text-5xl text-center font-bold leading-snug md:leading-normal text-black" data-aos="fade-up"
+                    data-aos-offset="100"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false">
                         Hire a top-notch <br /> agile team on demand<br /></h1>
                 </div>
             </div>
@@ -84,7 +90,7 @@
                     </p>
                 </div>
                 <div class="text-center py-4 md:py-0">
-                    <a href="#"
+                    <a href=""
                         class="text-base text-white capitalize py-2 px-8 rounded-2xl bg-red-600 hover:bg-black duration-150 ease-in-out transition-all">let's
                         talk</a>
                 </div>
@@ -92,7 +98,14 @@
         </div>
 
         <!--INTRODUCTION-->
-        <div class="max-w-7xl mx-auto my-32 p-2">
+        <div class="max-w-7xl mx-auto my-32 p-2" data-aos="fade-up"
+        data-aos-offset="100"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top">
             <div class="md:grid md:grid-cols-2">
                 <div>
                     <h2 class="text-6xl font-bold leading-normal">hello<br />we're<span class="text-red-600">
@@ -124,15 +137,34 @@
         <section>
             <div class="max-w-7xl mx-auto">
                 <div class="md:grid md:grid-cols-2 hidden mt-5 p-2">
-                    <div class="text-start">
+                    <div class="text-start" data-aos="fade-down"
+                    data-aos-offset="100"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false">
                         <h3 class="capitalize text-2xl">expert guidance</h3>
                     </div>
-                    <div class="text-end">
+                    <div class="text-end" data-aos="fade-down"
+                    data-aos-offset="100"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false">
                         <h3 class="capitalize text-2xl">end-to-end-support</h3>
                     </div>
                 </div>
             </div>
-            <div class="max-w-7xl mx-auto py-10 p-2">
+            <div class="max-w-7xl mx-auto py-10 p-2" data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top">
                 <h1 class="capitalize text-6xl md:text-[10rem] font-bold">Services</h1>
                 <div class="md:grid md:grid-cols-2 gap-4 mt-5">
                     <div>
@@ -162,7 +194,7 @@
             <div class="w-full text-center mt-20">
                 <h3 class="text-4xl capitalize my-5 hover:cursor-pointer ease-in hover:text-red-600 duration-150 transition-all" id="digital_marketing">Digital marketing</h3>
                 <div id="digitalMarketingDetails" class="hidden bg-white p-4">
-                    <p class="max-w-7xl mx-auto">
+                    <p class="max-w-7xl mx-auto transition-all ease-in duration-500">
                         Digital Marketing became the novel face of the current marketing
                         business. It is time-saving and cost-effective. The customers get to interact with the
                         producers directly through virtual means. This interaction would help the businessmen to
@@ -378,7 +410,9 @@ https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js
         <script src="
 https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js
 "></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
+            AOS.init();
             $('document').ready(function () {
                 $('#team').owlCarousel({
                     loop: true,
