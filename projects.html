@@ -6,6 +6,7 @@
     <title>Projects | Team MORO</title>
     <link rel="stylesheet" href="./build/css/style.css">
     <link rel="stylesheet" href="./build/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css" />
     <link href="
 https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css
 " rel="stylesheet">
@@ -14,7 +15,7 @@ https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css
  <!--HEADER-SECTION-->
  <div class="max-w-7xl mx-auto">
     <header>
-        <nav class=" z-10 fixed w-full bg-white p-5 max-w-7xl mx-auto text-black md:flex md:items-center md:justify-between">
+        <nav class=" z-10 w-full bg-white p-5 max-w-7xl mx-auto text-black md:flex md:items-center md:justify-between">
             <div class="flex justify-between items-center ">
                 <span class="text-2xl font-[Poppins] cursor-pointer">
                     <img class="h-10 inline" src="./build/img/moro-logo.png">
@@ -52,10 +53,10 @@ https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css
                 <h2 class="text-6xl font-bold leading-normal">hello<br/>here<span class="text-red-600"> our projects</span></h2>
             </div>
             <div class="my-auto">
-                <p class="text-base  w-full md:w-3/4 mx-auto">
+                <p class="text-base  w-full md:w-3/4 mx-auto text-gray-500">
                     We believe that truly impactful brands inspire their audiences to action, to dream, to change, they leave an impression on their audiences and world genuine influence.
                 </p>
-                <p class="text-base w-full md:w-3/4 mx-auto mt-5">
+                <p class="text-base w-full md:w-3/4 mx-auto mt-5 text-gray-500">
                     Creating work like this is our passion, it’s what brought us together, and it’s what keeps us moving forward.
                 </p>
             </div>
@@ -72,40 +73,23 @@ https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css
  <!--PROJECTS-SECTION-->
  <section class="py-20">
     <div class="max-w-7xl mx-auto p-5">
-        <div class="md:grid md:grid-cols-2 gap-4">
-            <div>
-                <div class="shadow-lg hover:bg-black hover:text-white ease-in duration-150 transition-all rounded-lg hover:cursor-pointer mb-10 m-3 md:mb-0 md:m-0">
-                    <img src="./build/img/projects/3.jpg" class="object-fill" alt="">
-                    <div class="py-10 px-5">
-                        <h3 class="text-4xl capitalize font-semibold">Miscellaneous Works &rarr;</h3>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="shadow-lg hover:bg-black hover:text-white ease-in duration-150 transition-all rounded-lg hover:cursor-pointer md:mt-32 mb-10 m-3 md:mb-0 md:m-0">
-                    <img src="./build/img/projects/2.jpg" class="object-fill" alt="">
-                    <div class="py-10 px-5">
-                        <h3 class="text-4xl capitalize font-semibold"> Video Advertisements &rarr;</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="shadow-lg hover:bg-black hover:text-white ease-in duration-150 transition-all rounded-lg hover:cursor-pointer mb-10 m-3 md:mb-0 md:m-0">
-                    <img src="./build/img/projects/3.jpg" class="object-fill" alt="">
-                    <div class="py-10 px-5">
-                        <h3 class="text-4xl capitalize font-semibold"> Packaging Design Creatives &rarr;</h3>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="shadow-lg hover:bg-black hover:text-white ease-in duration-150 transition-all rounded-lg hover:cursor-pointer md:mt-32 mb-10 m-3 md:mb-0 md:m-0">
-                    <img src="./build/img/projects/2.jpg" class="object-fill" alt="">
-                    <div class="py-10 px-5">
-                        <h3 class="text-4xl capitalize font-semibold"> Branding Creatives &rarr;</h3>
-                    </div>
-                </div>
-            </div>
+        <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-4" id="lightgallery">
+            <a href="./build/img/projects/2.jpg" data-lg-size="1600-2400" class="bg-black">
+                <img alt="" src="./build/img/projects/2.jpg"
+                    class="hover:opacity-60 transition-all duration-500 hover:scale-97" />
+            </a>
+            <a href="./build/img/projects/2.jpg" data-lg-size="1600-2400" class="bg-black">
+                <img alt="" src="./build/img/projects/2.jpg"
+                    class="hover:opacity-60 transition-all duration-500 hover:scale-97" />
+            </a>
+            <a href="./build/img/projects/3.jpg" data-lg-size="1600-2400" class="bg-black">
+                <img alt="" src="./build/img/projects/3.jpg"
+                    class="hover:opacity-60 transition-all duration-500 hover:scale-97" />
+            </a>
+            <a href="./build/img/projects/2.jpg" data-lg-size="1600-2400" class="bg-black">
+                <img alt="" src="./build/img/projects/2.jpg"
+                    class="hover:opacity-60 transition-all duration-500 hover:scale-97" />
+            </a>
         </div>
     </div>   
  </section>
@@ -201,7 +185,14 @@ https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js
 <script src="
 https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js
 "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
 <script>
+    lightGallery(document.getElementById('lightgallery'), {
+    plugins: [lgZoom, lgThumbnail],
+    speed: 500,
+});
     $('document').ready(function() {
         $('#team').owlCarousel({
             loop: true,
@@ -222,6 +213,5 @@ https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js
         })
     })
 </script>
-
 </body>
 </html>
