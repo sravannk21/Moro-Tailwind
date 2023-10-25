@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -9,15 +9,13 @@
     <link rel="stylesheet" href="./build/css/custom.css">
     <link href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./src/vendors/particles/style.css">
 </head>
 
-<body>
+<body class="bg-white">
     <!--HEADER-SECTION-->
-    <div class="max-w-full mx-auto relative" id="particles-js">
-        <div class="max-w-7xl mx-auto">
-            <nav
-                class=" z-10 fixed w-full bg-black p-5 max-w-7xl mx-auto text-white md:flex md:items-center md:justify-between">
+    <div class="max-w-7xl mx-auto">
+        <header>
+            <nav class=" z-10 fixed w-full bg-white p-5 max-w-7xl mx-auto text-black md:flex md:items-center md:justify-between">
                 <div class="flex justify-between items-center ">
                     <span class="text-2xl font-[Poppins] cursor-pointer">
                         <img class="h-10 inline" src="./build/img/moro-logo.png">
@@ -29,14 +27,12 @@
                 </div>
 
                 <ul
-                    class="md:flex bg-black md:items-center z-[9] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                    class="md:flex bg-white md:items-center z-[9] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
                     <li class="mx-4 my-6 md:my-0">
-                        <a href="projects.html"
-                            class="text-base hover:text-red-500 duration-500 capitalize">projects</a>
+                        <a href="projects.html" class="text-base hover:text-red-500 duration-500 capitalize">projects</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0">
-                        <a href="services.html"
-                            class="text-base hover:text-red-500 duration-500 capitalize">services</a>
+                        <a href="services.html" class="text-base hover:text-red-500 duration-500 capitalize">services</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0">
                         <a href="about.html" class="text-base hover:text-red-500 duration-500 capitalize">about us</a>
@@ -49,17 +45,25 @@
                     </li>
                 </ul>
             </nav>
-            <div class="absolute top-1/3 md:left-40 p-3">
-                <h4 class="text-2xl text-white leading-snug">Graphic design and video editing subscription service</h4>
-                <h1 class="w-full text-4xl md:text-6xl text-left font-semibold text-white mt-2 mb-10"
-                    style="line-height: 125%;">A seamless way to get<br /> graphics and videos<br /> created at
-                    speed.<br /></h1>
-                <a href="#"
-                    class="text-base text-white hover:text-black capitalize py-4 px-8 rounded-full bg-red-600 hover:bg-white duration-150 ease-in-out transition-all">let's
-                    work together</a>
+            <div class="flex justify-center h-[70vh]">
+                <div class="my-auto p-5">
+                    <h1 class="uppercase text-4xl md:text-8xl text-left font-bold leading-snug text-black"
+                        data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000"
+                        data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
+                        Hire a top-notch <br /> <span class="text-4xl md:text-7xl text-red-600">agile team on demand</span><br /></h1>
+                    <div class="text-left pt-5 md:hidden">
+                        <a href="#" class="text-base text-white capitalize py-2 px-8 rounded-2xl bg-red-600 hover:bg-black duration-150 ease-in-out transition-all">let's work together</a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </header>
     </div>
+    <div class="max-w-7xl mx-auto">
+
+    </div>
+
+    <!--DIVIDER-->
+    <div class="w-full h-0.5 bg-black"></div>
 
     <section">
         <!--HERO SUB SECTION-->
@@ -174,91 +178,78 @@
             <!--SERVICES-HIGHLIGHTS-->
             <div class="w-full text-center mt-20">
                 <div class="collapse-marketing">
-                    <h3
-                        class="text-4xl capitalize my-5 hover:cursor-pointer ease-in hover:text-red-600 duration-150 transition-all">
-                        Digital marketing &darr;</h3>
-                    <div class="py-10">
-                        <p class="max-w-7xl mx-auto transition-all ease-in duration-500">
-                            Digital Marketing became the novel face of the current marketing
-                            business. It is time-saving and cost-effective. The customers get to interact with the
-                            producers directly through virtual means. This interaction would help the businessmen to
-                            understand the likes and dislikes of the consumers and cater to them. Digital Marketing also
-                            opens avenues for posting content instantly. Moro’s dexterity in this field is ineffable.
-                        </p>
-                    </div>
+                    <h3 class="text-4xl capitalize my-5 hover:cursor-pointer ease-in hover:text-red-600 duration-150 transition-all">Digital marketing &darr;</h3>
+                <div class="py-10">
+                    <p class="max-w-7xl mx-auto transition-all ease-in duration-500">
+                        Digital Marketing became the novel face of the current marketing
+                        business. It is time-saving and cost-effective. The customers get to interact with the
+                        producers directly through virtual means. This interaction would help the businessmen to
+                        understand the likes and dislikes of the consumers and cater to them. Digital Marketing also
+                        opens avenues for posting content instantly. Moro’s dexterity in this field is ineffable.</p>
+                </div>
                 </div>
 
                 <div class="w-full h-[1px] bg-gray-500"></div>
                 <div class="collapse-graphics">
-                    <h3
-                        class="text-4xl capitalize my-5 hover:cursor-pointer ease-in hover:text-red-600 duration-150 transition-all">
-                        graphic designing &darr;</h3>
-                    <div class="py-10">
-                        <p class="max-w-7xl mx-auto transition-all ease-in duration-500">
-                            Unique designs announce a lot about the creativity and ingenuity of the
-                            brands. By flowing the tents of graphic design and also amalgamating it with our personal
-                            talent we some up with impressive designs which is out of the box and out of the world.
-                            These elegant designs will never fail to impress you and your customers.</p>
-                    </div>
+                    <h3 class="text-4xl capitalize my-5 hover:cursor-pointer ease-in hover:text-red-600 duration-150 transition-all">graphic designing &darr;</h3>
+                <div class="py-10">
+                    <p class="max-w-7xl mx-auto transition-all ease-in duration-500">
+                        Unique designs announce a lot about the creativity and ingenuity of the
+                        brands. By flowing the tents of graphic design and also amalgamating it with our personal
+                        talent we some up with impressive designs which is out of the box and out of the world.
+                        These elegant designs will never fail to impress you and your customers.</p>
+                </div>
                 </div>
 
                 <div class="w-full h-[1px] bg-gray-500"></div>
                 <div class="collapse-branding">
-                    <h3
-                        class="text-4xl capitalize my-5 hover:cursor-pointer ease-in hover:text-red-600 duration-150 transition-all">
-                        branding &darr;</h3>
-                    <div class="py-10">
-                        <p class="max-w-7xl mx-auto transition-all ease-in duration-500">
-                            The prominence your brand garners in the market depends mostly on the
-                            way it is present to the audience. This where the relevance if MORO come into the forefront
-                            having least extensively about your specialities and strengths, we frame well-crafted
-                            strategies to highlight your products to the target audience. This portfolio which we design
-                            for your brand; will indubiltably, be ab asset for scaling up your business.</p>
-                    </div>
+                    <h3 class="text-4xl capitalize my-5 hover:cursor-pointer ease-in hover:text-red-600 duration-150 transition-all">branding &darr;</h3>
+                <div class="py-10">
+                    <p class="max-w-7xl mx-auto transition-all ease-in duration-500">
+                        The prominence your brand garners in the market depends mostly on the
+                        way it is present to the audience. This where the relevance if MORO come into the forefront
+                        having least extensively about your specialities and strengths, we frame well-crafted
+                        strategies to highlight your products to the target audience. This portfolio which we design
+                        for your brand; will indubiltably, be ab asset for scaling up your business.</p>
+                </div>
                 </div>
                 <div class="w-full h-[1px] bg-gray-500"></div>
 
 
                 <div class="collapse-web">
-                    <h3
-                        class="text-4xl capitalize my-5 hover:cursor-pointer ease-in hover:text-red-600 duration-150 transition-all">
-                        web development &darr;</h3>
-                    <div class="py-10">
-                        <p class="max-w-7xl mx-auto transition-all ease-in duration-500">
-                            This field requires skill, agility and talent to combine various
-                            software’s with a unique blend of UX and UI we successfully create a lead-generating
-                            masterpiece which presents the brand in an excellent way.</p>
-                    </div>
+                    <h3 class="text-4xl capitalize my-5 hover:cursor-pointer ease-in hover:text-red-600 duration-150 transition-all">web development &darr;</h3>
+                <div class="py-10">
+                    <p class="max-w-7xl mx-auto transition-all ease-in duration-500">
+                        This field requires skill, agility and talent to combine various
+                        software’s with a unique blend of UX and UI we successfully create a lead-generating
+                        masterpiece which presents the brand in an excellent way.</p>
+                </div>
                 </div>
                 <div class="w-full h-[1px] bg-gray-500"></div>
 
 
                 <div class="collapse-photography">
-                    <h3
-                        class="text-4xl capitalize my-5 hover:cursor-pointer ease-in hover:text-red-600 duration-150 transition-all">
-                        commercial photography &darr;</h3>
-                    <div class="py-10">
-                        <p class="max-w-7xl mx-auto transition-all ease-in duration-500">
-                            In a tech-savy world, Photos and Videos have become
-                            synonyms for entertainment. |This helps brand to embed their advertisements into
-                            entertainment media and influence the general public. Through eye catching image and
-                            impressing videos, we entirely transform the general view into landing your brand.
-                            Collaborate with MORO to sense the magic.</p>
-                    </div>
+                    <h3 class="text-4xl capitalize my-5 hover:cursor-pointer ease-in hover:text-red-600 duration-150 transition-all">commercial photography &darr;</h3>
+                <div class="py-10">
+                    <p class="max-w-7xl mx-auto transition-all ease-in duration-500">
+                        In a tech-savy world, Photos and Videos have become
+                        synonyms for entertainment. |This helps brand to embed their advertisements into
+                        entertainment media and influence the general public. Through eye catching image and
+                        impressing videos, we entirely transform the general view into landing your brand.
+                        Collaborate with MORO to sense the magic.</p>
+                </div>
                 </div>
                 <div class="w-full h-[1px] bg-gray-500"></div>
 
 
                 <div class="collapse-motion">
-                    <h3
-                        class="text-4xl capitalize my-5 hover:cursor-pointer ease-in hover:text-red-600 duration-150 transition-all">
-                        motion graphics &darr;</h3>
-                    <div class="py-10">
-                        <p class="max-w-7xl mx-auto transition-all ease-in duration-500">
-                            Every product is unique, so should be the strategy it employs to get to the
-                            market. We formulate specific strategies for each brand which proves to be timely and
-                            effective. Through the pathway framed by MORO, rise yourself to success.</p>
-                    </div>
+                    <h3 class="text-4xl capitalize my-5 hover:cursor-pointer ease-in hover:text-red-600 duration-150 transition-all">motion graphics &darr;</h3>
+                <div class="py-10">
+                    <p class="max-w-7xl mx-auto transition-all ease-in duration-500">
+                        Every product is unique, so should be the strategy it employs to get to the
+                        market. We formulate specific strategies for each brand which proves to be timely and
+                        effective. Through the pathway framed by MORO, rise yourself to success.</p>
+                </div>
                 </div>
             </div>
             <!--DIVIDER-->
@@ -387,42 +378,49 @@
             </div>
         </footer>
 
-        <!-- scripts -->
         <script src="./build/js/script.js"></script>
-        <script src="./src/vendors/particles/particles.js"></script>
-        <script src="./src/vendors/particles/app.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+        <script>
+            function Menu(e) {
+                let list = document.querySelector('ul');
+                e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+            }
+        </script>
+        <script src="
+https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js
+"></script>
         <script src="./src/vendors/jquary/jquery-3.7.0.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="
+https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js
+"></script>
         <script src="./src/vendors/collapsible/jqHeaderSlider.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             //click to expand section plugin function call
             window.header_slider($('.collapse-marketing').first(), {
                 closed_by_default: true,
-                color: '#000000'
+                color:'#000000'
             });
             window.header_slider($('.collapse-graphics').first(), {
                 closed_by_default: true,
-                color: '#000000'
+                color:'#000000'
             })
             window.header_slider($('.collapse-branding').first(), {
                 closed_by_default: true,
-                color: '#000000'
+                color:'#000000'
             })
             window.header_slider($('.collapse-web').first(), {
                 closed_by_default: true,
-                color: '#000000'
+                color:'#000000'
             })
             window.header_slider($('.collapse-photography').first(), {
                 closed_by_default: true,
-                color: '#000000'
+                color:'#000000'
             })
             window.header_slider($('.collapse-motion').first(), {
                 closed_by_default: true,
-                color: '#000000'
+                color:'#000000'
             })
             //animation on scroll plugin call
             AOS.init();
@@ -448,14 +446,6 @@
                 })
             })
         </script>
-        <script>
-            function Menu(e) {
-                let list = document.querySelector('ul');
-                e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
-            }
-        </script>
-
-
 </body>
 
 </html>
