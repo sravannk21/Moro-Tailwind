@@ -1,217 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Team MORO</title>
     <link rel="stylesheet" href="./build/css/style.css">
     <link rel="stylesheet" href="./build/css/custom.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css" />
     <link href="
 https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css
 " rel="stylesheet">
 </head>
+
 <body class="bg-white">
- <!--HEADER-SECTION-->
- <div class="max-w-7xl mx-auto">
-    <header>
-        <nav class=" z-10 w-full bg-white p-5 max-w-7xl mx-auto text-black md:flex md:items-center md:justify-between">
-            <div class="flex justify-between items-center ">
-                <span class="text-2xl font-[Poppins] cursor-pointer">
-                    <img class="h-10 inline" src="./build/img/moro-logo.png">
-                </span>
+    <!--HEADER-SECTION-->
+    <div class="max-w-7xl mx-auto">
+        <header>
+            <nav
+                class=" z-10 w-full bg-white p-5 max-w-7xl mx-auto text-black md:flex md:items-center md:justify-between">
+                <div class="flex justify-between items-center ">
+                    <span class="text-2xl font-[Poppins] cursor-pointer">
+                        <img class="h-10 inline" src="./build/img/moro-logo.png">
+                    </span>
 
-                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-                </span>
+                    <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                    </span>
+                </div>
+
+                <ul
+                    class="md:flex bg-white md:items-center z-[9] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="index.html" class="text-base hover:text-red-500 duration-500 capitalize">home</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="projects.html"
+                            class="text-base hover:text-red-500 duration-500 capitalize">projects</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="services.html"
+                            class="text-base hover:text-red-500 duration-500 capitalize">services</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="about.html" class="text-base hover:text-red-500 duration-500 capitalize">about us</a>
+                    </li>
+                </ul>
+                <ul
+                    class="md:flex md:items-center z-[9] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="#contact" class="text-base hover:text-red-500 duration-500 capitalize">contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="md:grid md:grid-cols-2 p-5">
+                <div class="my-auto">
+                    <h2 class="text-6xl font-bold leading-normal">hello<br />here<span class="text-red-600"> our
+                            projects</span></h2>
+                </div>
+                <div class="my-auto">
+                    <p class="text-base  w-full md:w-3/4 mx-auto text-gray-500">
+                        We believe that truly impactful brands inspire their audiences to action, to dream, to change,
+                        they leave an impression on their audiences and world genuine influence.
+                    </p>
+                    <p class="text-base w-full md:w-3/4 mx-auto mt-5 text-gray-500">
+                        Creating work like this is our passion, it’s what brought us together, and it’s what keeps us
+                        moving forward.
+                    </p>
+                </div>
             </div>
-
-            <ul
-                class="md:flex bg-white md:items-center z-[9] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="index.html" class="text-base hover:text-red-500 duration-500 capitalize">home</a>
-                </li>
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="projects.html" class="text-base hover:text-red-500 duration-500 capitalize">projects</a>
-                </li>
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="services.html" class="text-base hover:text-red-500 duration-500 capitalize">services</a>
-                </li>
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="about.html" class="text-base hover:text-red-500 duration-500 capitalize">about us</a>
-                </li>
-            </ul>
-            <ul
-                class="md:flex md:items-center z-[9] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="#contact" class="text-base hover:text-red-500 duration-500 capitalize">contact</a>
-                </li>
-            </ul>
-        </nav>
-          <div class="md:grid md:grid-cols-2 p-5">
-            <div class="my-auto">
-                <h2 class="text-6xl font-bold leading-normal">hello<br/>here<span class="text-red-600"> our projects</span></h2>
+            <div class="text-center mb-10">
+                <a href="#"
+                    class="text-base text-white capitalize py-2 px-8 rounded-2xl bg-red-600 hover:bg-black duration-150 ease-in-out transition-all">let's
+                    work together</a>
             </div>
-            <div class="my-auto">
-                <p class="text-base  w-full md:w-3/4 mx-auto text-gray-500">
-                    We believe that truly impactful brands inspire their audiences to action, to dream, to change, they leave an impression on their audiences and world genuine influence.
-                </p>
-                <p class="text-base w-full md:w-3/4 mx-auto mt-5 text-gray-500">
-                    Creating work like this is our passion, it’s what brought us together, and it’s what keeps us moving forward.
-                </p>
-            </div>
-          </div>
-          <div class="text-center mb-10">
-            <a href="#" class="text-base text-white capitalize py-2 px-8 rounded-2xl bg-red-600 hover:bg-black duration-150 ease-in-out transition-all">let's work together</a>
-        </div>
-    </header>
- </div>
+        </header>
+    </div>
 
- <!--DIVIDER-->
- <div class="w-full h-0.5 bg-black"></div>
-
- <!--PROJECTS-SECTION-->
- <section class="py-20">
-    <div class="max-w-7xl mx-auto p-5">
-        <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-4" id="lightgallery">
-            <a href="./build/img/projects/2.jpg" data-lg-size="1600-2400" class="bg-black">
-                <img alt="" src="./build/img/projects/2.jpg"
-                    class="hover:opacity-60 transition-all duration-500 hover:scale-97" />
-            </a>
-            <a href="./build/img/projects/2.jpg" data-lg-size="1600-2400" class="bg-black">
-                <img alt="" src="./build/img/projects/2.jpg"
-                    class="hover:opacity-60 transition-all duration-500 hover:scale-97" />
-            </a>
-            <a href="./build/img/projects/3.jpg" data-lg-size="1600-2400" class="bg-black">
-                <img alt="" src="./build/img/projects/3.jpg"
-                    class="hover:opacity-60 transition-all duration-500 hover:scale-97" />
-            </a>
-            <a href="./build/img/projects/2.jpg" data-lg-size="1600-2400" class="bg-black">
-                <img alt="" src="./build/img/projects/2.jpg"
-                    class="hover:opacity-60 transition-all duration-500 hover:scale-97" />
-            </a>
-        </div>
-    </div>   
- </section>
-
- <!--CONTACT-FORM-->
- <section class="py-20">
-    <div class="max-w-7xl mx-auto p-5">
-        <h3 class="capitalize text-center text-4xl font-bold mb-10">ready to start a project</h3>
-        <div class="md:grid md:grid-cols-2">
-            <div class="my-auto">
-                <h3 class="capitalize text-2xl font-bold">To make requests for<br> further information</h3>
-                <p class="md:w-1/2 mt-5 mb-5 md:mb-0">we just need couple of hours! no morethan two working days since reciving your issue ticket</p>
-            </div>
-
-            <!--CONTACT-FORM-->
+    <!--PROJECTS-SECTION-->
+    <section class="py-20">
+        <div class="w-full mx-auto p-0">
             <div>
-                <form action="" method="post" enctype="multipart/form-data">
-                    <input type="text" name="name" placeholder="Name" class="outline-none bg-gray-100 p-2 text-black w-full mb-5" id="">
-                    <div class="md:grid md:grid-cols-2 gap-4">
-                        <input type="email" name="email" placeholder="Email" class="outline-none bg-gray-100 p-2 text-black w-full mb-5" id="">
-                        <input type="text" name="phone" placeholder="Phone" class="outline-none bg-gray-100 p-2 text-black w-full mb-5" id="">
-                    </div>
-                    <textarea class="outline-none bg-gray-100 p-2 w-full mb-5 h-32" placeholder="Message"></textarea>
-                    <a href="#" class="capitalize py-2 px-6 text-base bg-red-600 hover:bg-black duration-150 ease-in text-white rounded-2xl">message us</a>
-                </form>
+                <div class="columns-1 md:flex md:flex-wrap" id="lightgallery">
+                    <a href="./build/img/projects/portfolio_item_01.jpg" class="bg-black basis-1/2">
+                        <img alt="" src="./build/img/projects/portfolio_item_01.jpg"
+                            class="hover:opacity-60 transition-all duration-500 hover:scale-97" />
+                    </a>
+                    <a href="./build/img/projects/portfolio_item_02.jpg" class="bg-black basis-1/4">
+                        <img alt="" src="./build/img/projects/portfolio_item_02.jpg"
+                            class="hover:opacity-60 transition-all duration-500 hover:scale-97" />
+                    </a>
+                    <a href="./build/img/projects/portfolio_item_03.jpg" class="bg-black basis-1/4">
+                        <img alt="" src="./build/img/projects/portfolio_item_03.jpg"
+                            class="hover:opacity-60 transition-all duration-500 hover:scale-97"/>
+                    </a>
+                    <a href="./build/img/projects/portfolio_item_04.jpg" class="bg-black basis-1/4">
+                        <img alt="" src="./build/img/projects/portfolio_item_04.jpg"
+                            class="hover:opacity-60 transition-all duration-500 hover:scale-97"/>
+                    </a>
+                    <a href="./build/img/projects/portfolio_item_05.jpg" class="bg-black basis-1/4">
+                        <img alt="" src="./build/img/projects/portfolio_item_05.jpg"
+                            class="hover:opacity-60 transition-all duration-500 hover:scale-97"/>
+                    </a>
+                    <a href="./build/img/projects/portfolio_item_07.jpg" class="bg-black basis-2/4">
+                        <img alt="" src="./build/img/projects/portfolio_item_07.jpg"
+                            class="hover:opacity-60 transition-all duration-500 hover:scale-97"/>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
- </section>
- <!--FOOTER-->
- <footer>
-    <div class="max-w-7xl mx-auto my-10 p-5">
-        <div class="md:grid md:grid-cols-3">
-            <div class="mb-2">
-                <h3 class="uppercase text-3xl mb-5">contact</h3>
-                <a href="" target="_blank">hi@teammoro.com</a>
-            </div>
-            <div class="mb-2">
-                <h3 class="uppercase text-3xl mb-5">india</h3>
-                <p class="capitalize">manatti complex,manna<br>taliparamba 670141</p>
-                <p class="mt-5">
-                    <a href="">9605164671</a><br>
-                    <a href="">9961164681</a>
-                </p>
-            </div>
-            <div class="mb-2">
-                <h3 class="uppercase text-3xl mb-5">uae</h3>
-                <p class="capitalize">suit no1402, level 14 boulevard plaza tower 1 downtown dubai UAE</p>
-                <p class="mt-5">
-                    <a href="">+971 55671 9396</a><br>
-                    <a href="">+971 44558 525</a>
-                </p>
-            </div>
-        </div>
-        <div class="md:grid md:grid-cols-2 mt-20">
-            <div class="lg:text-start">
-                <p class="font-semibold">&copy; Moro 2023</p>
-            </div>
-            <div class="md:text-end mt-5 md:mt-0">
-                <span class="mr-2 text-3xl text-gray-600 hover:text-black duration-150 ease-in">
-                    <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
-                </span>
-                <span class="mr-2 text-3xl text-gray-600 hover:text-black duration-150 ease-in">
-                    <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
-                </span>
-                <span class="mr-2 text-3xl text-gray-600 hover:text-black duration-150 ease-in">
-                    <a href=""><ion-icon name="logo-behance"></ion-icon></a>
-                </span>
-                <span class="mr-2 text-3xl text-gray-600 hover:text-black duration-150 ease-in">
-                    <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
-                </span>
-                <span class="text-3xl text-gray-600 hover:text-black duration-150 ease-in">
-                    <a href=""><ion-icon name="logo-dribbble"></ion-icon></a>
-                </span>
-            </div>
-        </div>
-    </div>
- </footer>
+    </section>
 
-<script src="./build/js/script.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script>
-    function Menu(e){
-    let list = document.querySelector('ul');
-    e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
-  }
-</script>
-<script src="
+    <!--CONTACT-FORM-->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto p-5">
+            <h3 class="capitalize text-center text-4xl font-bold mb-10">ready to start a project</h3>
+            <div class="md:grid md:grid-cols-2">
+                <div class="my-auto">
+                    <h3 class="capitalize text-2xl font-bold">To make requests for<br> further information</h3>
+                    <p class="md:w-1/2 mt-5 mb-5 md:mb-0">we just need couple of hours! no morethan two working days
+                        since reciving your issue ticket</p>
+                </div>
+
+                <!--CONTACT-FORM-->
+                <div>
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <input type="text" name="name" placeholder="Name"
+                            class="outline-none bg-gray-100 p-2 text-black w-full mb-5" id="">
+                        <div class="md:grid md:grid-cols-2 gap-4">
+                            <input type="email" name="email" placeholder="Email"
+                                class="outline-none bg-gray-100 p-2 text-black w-full mb-5" id="">
+                            <input type="text" name="phone" placeholder="Phone"
+                                class="outline-none bg-gray-100 p-2 text-black w-full mb-5" id="">
+                        </div>
+                        <textarea class="outline-none bg-gray-100 p-2 w-full mb-5 h-32"
+                            placeholder="Message"></textarea>
+                        <a href="#"
+                            class="capitalize py-2 px-6 text-base bg-red-600 hover:bg-black duration-150 ease-in text-white rounded-2xl">message
+                            us</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+        <div class="max-w-7xl mx-auto my-10 p-5">
+            <div class="md:grid md:grid-cols-3">
+                <div class="mb-2">
+                    <h3 class="uppercase text-3xl mb-5">contact</h3>
+                    <a href="" target="_blank">hi@teammoro.com</a>
+                </div>
+                <div class="mb-2">
+                    <h3 class="uppercase text-3xl mb-5">india</h3>
+                    <p class="capitalize">manatti complex,manna<br>taliparamba 670141</p>
+                    <p class="mt-5">
+                        <a href="">9605164671</a><br>
+                        <a href="">9961164681</a>
+                    </p>
+                </div>
+                <div class="mb-2">
+                    <h3 class="uppercase text-3xl mb-5">uae</h3>
+                    <p class="capitalize">suit no1402, level 14 boulevard plaza tower 1 downtown dubai UAE</p>
+                    <p class="mt-5">
+                        <a href="">+971 55671 9396</a><br>
+                        <a href="">+971 44558 525</a>
+                    </p>
+                </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 mt-20">
+                <div class="lg:text-start">
+                    <p class="font-semibold">&copy; Moro 2023</p>
+                </div>
+                <div class="md:text-end mt-5 md:mt-0">
+                    <span class="mr-2 text-3xl text-gray-600 hover:text-black duration-150 ease-in">
+                        <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                    </span>
+                    <span class="mr-2 text-3xl text-gray-600 hover:text-black duration-150 ease-in">
+                        <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                    </span>
+                    <span class="mr-2 text-3xl text-gray-600 hover:text-black duration-150 ease-in">
+                        <a href=""><ion-icon name="logo-behance"></ion-icon></a>
+                    </span>
+                    <span class="mr-2 text-3xl text-gray-600 hover:text-black duration-150 ease-in">
+                        <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </span>
+                    <span class="text-3xl text-gray-600 hover:text-black duration-150 ease-in">
+                        <a href=""><ion-icon name="logo-dribbble"></ion-icon></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./build/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+        }
+    </script>
+    <script src="
 https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js
 "></script>
-<script src="./src/vendors/jquary/jquery-3.7.0.min.js"></script>
-<script src="
+    <script src="./src/vendors/jquary/jquery-3.7.0.min.js"></script>
+    <script src="
 https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js
 "></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.umd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
-<script>
-    lightGallery(document.getElementById('lightgallery'), {
-    plugins: [lgZoom, lgThumbnail],
-    speed: 500,
-});
-    $('document').ready(function() {
-        $('#team').owlCarousel({
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 5
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.umd.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
+    <script>
+        lightGallery(document.getElementById('lightgallery'), {
+            plugins: [lgZoom, lgThumbnail],
+            speed: 500,
+        });
+        $('document').ready(function () {
+            $('#team').owlCarousel({
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
                 }
-            }
+            })
         })
-    })
-</script>
+    </script>
 </body>
+
 </html>

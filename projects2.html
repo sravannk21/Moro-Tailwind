@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <!-- Include lightGallery CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css" />
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include lightGallery JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+    <!-- Include lightGallery plugins (optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
+    <!-- Include lightGallery filtering plugin -->
+    <script src="path-to-lightgallery/js/lg-filter.min.js"></script>
+</head>
+<body>
+    <div id="gallery">
+        <div class="gallery-item" data-category="category-1">
+            <a href="./build/img/projects/1.jpg">
+                <img src="./build/img/projects/1.jpg" alt="Image 1">
+            </a>
+        </div>
+        <div class="gallery-item" data-category="category-2">
+            <a href="./build/img/projects/2.jpg">
+                <img src="./build/img/projects/2.jpg" alt="Image 2">
+            </a>
+        </div>
+        <!-- Add more gallery items with appropriate categories -->
+    </div>
+    
+    <div id="filter-buttons">
+        <button data-filter="all">Show All</button>
+        <button data-filter="category-1">Category 1</button>
+        <button data-filter="category-2">Category 2</button>
+        <!-- Add buttons for other categories as needed -->
+    </div>
+    <script>
+        // Initialize lightGallery
+        $('document').ready(function() {
+            $('#gallery').lightGallery({
+                selector: '.gallery-item',
+                subHtmlSelectorRelative: true,
+                thumbnail: true,
+                download: false, // Adjust settings as needed
+            });
+        });
+    
+        // Filtering functionality
+        $('#filter-buttons button').on('click', function() {
+            const filterValue = $(this).data('filter');
+            $('#gallery').data('lightGallery').filter(filterValue);
+        });
+    </script>
+    
+</body>
+</html>
