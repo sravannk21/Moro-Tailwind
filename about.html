@@ -7,16 +7,14 @@
     <title>About | Team MORO</title>
     <link rel="stylesheet" href="./build/css/style.css">
     <link rel="stylesheet" href="./build/css/custom.css">
-    <link href="
-https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css
-" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">
 </head>
 
 <body class="bg-white">
     <!--HEADER-SECTION-->
     <div class="max-w-7xl mx-auto">
         <header>
-            <nav class=" z-10 fixed w-full bg-white p-5 max-w-7xl mx-auto text-black md:flex md:items-center md:justify-between">
+            <nav class=" z-10 w-full bg-white p-5 max-w-7xl mx-auto text-black md:flex md:items-center md:justify-between">
                 <div class="flex justify-between items-center ">
                     <span class="text-2xl font-[Poppins] cursor-pointer">
                         <img class="h-10 inline" src="./build/img/moro-logo.png">
@@ -83,7 +81,7 @@ https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css
 
 
     <!--ABOUT-DESCRIPTION-->
-    <section class="py-10">
+    <section class="py-10 js-sticky-nav">
         <div class="max-w-7xl mx-auto p-5">
             <h3 class="capitalize text-center text-2xl font-bold">from humble beginninig to adevertaising pioneers</h3>
             <p class="md:w-2/3 mx-auto mt-7 text-center text-base leading-normal text-gray-500">
@@ -299,43 +297,18 @@ https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css
             </div>
         </div>
     </footer>
-
+    <script src="./src/vendors/jquary/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js"></script>
     <script src="./build/js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
     <script>
         function Menu(e) {
             let list = document.querySelector('ul');
             e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
         }
-    </script>
-    <script src="
-https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js
-"></script>
-    <script src="./src/vendors/jquary/jquery-3.7.0.min.js"></script>
-    <script src="
-https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js
-"></script>
-    <script>
-        $('document').ready(function () {
-            $('#team').owlCarousel({
-                loop: true,
-                margin: 10,
-                autoplay: true,
-                autoplayTimeout: 2000,
-                responsive: {
-                    0: {
-                        items: 1,
-                    },
-                    600: {
-                        items: 3
-                    },
-                    1000: {
-                        items: 5
-                    }
-                }
-            })
-        })
     </script>
 </body>
 

@@ -17,43 +17,40 @@ https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css
 <body class="bg-white">
     <!--HEADER-SECTION-->
     <div class="max-w-7xl mx-auto">
+        <nav class="z-10 w-full bg-white p-5 max-w-7xl mx-auto text-black md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center ">
+                <span class="text-2xl font-[Poppins] cursor-pointer">
+                    <img class="h-10 inline" src="./build/img/moro-logo.png">
+                </span>
+
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+
+            <ul
+                class="md:flex bg-white md:items-center z-[9] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="index.html" class="text-base hover:text-red-500 duration-500 capitalize">home</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="projects.html" class="text-base hover:text-red-500 duration-500 capitalize">projects</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="services.html" class="text-base hover:text-red-500 duration-500 capitalize">services</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="about.html" class="text-base hover:text-red-500 duration-500 capitalize">about us</a>
+                </li>
+            </ul>
+            <ul
+                class="md:flex md:items-center z-[9] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#contact" class="text-base hover:text-red-500 duration-500 capitalize">contact</a>
+                </li>
+            </ul>
+        </nav>
         <header>
-            <nav
-                class=" z-10 w-full bg-white p-5 max-w-7xl mx-auto text-black md:flex md:items-center md:justify-between">
-                <div class="flex justify-between items-center ">
-                    <span class="text-2xl font-[Poppins] cursor-pointer">
-                        <img class="h-10 inline" src="./build/img/moro-logo.png">
-                    </span>
-
-                    <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-                    </span>
-                </div>
-
-                <ul
-                    class="md:flex bg-white md:items-center z-[9] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-                    <li class="mx-4 my-6 md:my-0">
-                        <a href="index.html" class="text-base hover:text-red-500 duration-500 capitalize">home</a>
-                    </li>
-                    <li class="mx-4 my-6 md:my-0">
-                        <a href="projects.html"
-                            class="text-base hover:text-red-500 duration-500 capitalize">projects</a>
-                    </li>
-                    <li class="mx-4 my-6 md:my-0">
-                        <a href="services.html"
-                            class="text-base hover:text-red-500 duration-500 capitalize">services</a>
-                    </li>
-                    <li class="mx-4 my-6 md:my-0">
-                        <a href="about.html" class="text-base hover:text-red-500 duration-500 capitalize">about us</a>
-                    </li>
-                </ul>
-                <ul
-                    class="md:flex md:items-center z-[9] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-                    <li class="mx-4 my-6 md:my-0">
-                        <a href="#contact" class="text-base hover:text-red-500 duration-500 capitalize">contact</a>
-                    </li>
-                </ul>
-            </nav>
             <div class="md:grid md:grid-cols-2 p-5">
                 <div class="my-auto">
                     <h2 class="text-6xl font-bold leading-normal">hello<br />here<span class="text-red-600"> our
@@ -80,32 +77,44 @@ https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css
 
     <!--PROJECTS-SECTION-->
     <section class="py-20">
-        <div class="w-full mx-auto p-0">
+        <div class="w-full mx-auto p-0 js-sticky-nav">
             <div>
                 <div class="columns-1 md:flex md:flex-wrap" id="lightgallery">
-                    <a href="./build/img/projects/portfolio_item_01.jpg" class="bg-black basis-1/2">
-                        <img alt="" src="./build/img/projects/portfolio_item_01.jpg"
+                    <a href="./build/img/projects/13-a.jpg" class="bg-black basis-1/2">
+                        <img alt="" src="./build/img/projects/13-a.jpg"
                             class="hover:opacity-60 transition-all duration-500 hover:scale-97" />
                     </a>
-                    <a href="./build/img/projects/portfolio_item_02.jpg" class="bg-black basis-1/4">
-                        <img alt="" src="./build/img/projects/portfolio_item_02.jpg"
+                    <a href="./build/img/projects/1.jpg" class="bg-black basis-1/4">
+                        <img alt="" src="./build/img/projects/1.jpg"
                             class="hover:opacity-60 transition-all duration-500 hover:scale-97" />
                     </a>
-                    <a href="./build/img/projects/portfolio_item_03.jpg" class="bg-black basis-1/4">
-                        <img alt="" src="./build/img/projects/portfolio_item_03.jpg"
-                            class="hover:opacity-60 transition-all duration-500 hover:scale-97"/>
+                    <a href="./build/img/projects/1.jpg" class="bg-black basis-1/4">
+                        <img alt="" src="./build/img/projects/1.jpg"
+                            class="hover:opacity-60 transition-all duration-500 hover:scale-97" />
                     </a>
-                    <a href="./build/img/projects/portfolio_item_04.jpg" class="bg-black basis-1/4">
-                        <img alt="" src="./build/img/projects/portfolio_item_04.jpg"
-                            class="hover:opacity-60 transition-all duration-500 hover:scale-97"/>
+                    <a href="./build/img/projects/1.jpg" class="bg-black basis-1/4">
+                        <img alt="" src="./build/img/projects/1.jpg"
+                            class="hover:opacity-60 transition-all duration-500 hover:scale-97" />
                     </a>
-                    <a href="./build/img/projects/portfolio_item_05.jpg" class="bg-black basis-1/4">
-                        <img alt="" src="./build/img/projects/portfolio_item_05.jpg"
-                            class="hover:opacity-60 transition-all duration-500 hover:scale-97"/>
+                    <a href="./build/img/projects/1.jpg" class="bg-black basis-1/4">
+                        <img alt="" src="./build/img/projects/1.jpg"
+                            class="hover:opacity-60 transition-all duration-500 hover:scale-97" />
                     </a>
-                    <a href="./build/img/projects/portfolio_item_07.jpg" class="bg-black basis-2/4">
-                        <img alt="" src="./build/img/projects/portfolio_item_07.jpg"
-                            class="hover:opacity-60 transition-all duration-500 hover:scale-97"/>
+                    <a href="./build/img/projects/13-c.jpg" class="bg-black basis-2/4">
+                        <img alt="" src="./build/img/projects/13-c.jpg"
+                            class="hover:opacity-60 transition-all duration-500 hover:scale-97" />
+                    </a>
+                    <a href="./build/img/projects/13-b.jpg" class="bg-black basis-1/2">
+                        <img alt="" src="./build/img/projects/13-b.jpg"
+                            class="hover:opacity-60 transition-all duration-500 hover:scale-97" />
+                    </a>
+                    <a href="./build/img/projects/1.jpg" class="bg-black basis-1/4">
+                        <img alt="" src="./build/img/projects/1.jpg"
+                            class="hover:opacity-60 transition-all duration-500 hover:scale-97" />
+                    </a>
+                    <a href="./build/img/projects/1.jpg" class="bg-black basis-1/4">
+                        <img alt="" src="./build/img/projects/1.jpg"
+                            class="hover:opacity-60 transition-all duration-500 hover:scale-97" />
                     </a>
                 </div>
             </div>
@@ -119,7 +128,8 @@ https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css
             <div class="md:grid md:grid-cols-2">
                 <div class="my-auto">
                     <h3 class="capitalize text-2xl font-bold">To make requests for<br> further information</h3>
-                    <p class="md:w-1/2 mt-5 mb-5 md:mb-0 text-base leading-normal text-gray-500">we just need couple of hours! no morethan two working days
+                    <p class="md:w-1/2 mt-5 mb-5 md:mb-0 text-base leading-normal text-gray-500">we just need couple of
+                        hours! no morethan two working days
                         since reciving your issue ticket</p>
                 </div>
 
@@ -194,50 +204,25 @@ https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css
         </div>
     </footer>
 
-    <script src="./build/js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script>
-        function Menu(e) {
-            let list = document.querySelector('ul');
-            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
-        }
-    </script>
-    <script src="
-https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js
-"></script>
     <script src="./src/vendors/jquary/jquery-3.7.0.min.js"></script>
-    <script src="
-https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js
-"></script>
+    <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js"></script>
+    <script src="./build/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.umd.min.js"></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
     <script>
+        //projects popup
         lightGallery(document.getElementById('lightgallery'), {
             plugins: [lgZoom, lgThumbnail],
             speed: 500,
         });
-        $('document').ready(function () {
-            $('#team').owlCarousel({
-                loop: true,
-                margin: 10,
-                autoplay: true,
-                autoplayTimeout: 2000,
-                responsive: {
-                    0: {
-                        items: 1,
-                    },
-                    600: {
-                        items: 3
-                    },
-                    1000: {
-                        items: 5
-                    }
-                }
-            })
-        })
+        function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+        }
     </script>
 </body>
 
